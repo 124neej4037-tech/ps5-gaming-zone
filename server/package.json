@@ -1,0 +1,20 @@
+{
+  "name": "bandhilki-ps5-backend",
+  "version": "1.0.0",
+  "description": "Bandhilki PS5 Gaming Zone Express Backend with Firebase Admin",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "seed": "node src/scripts/seed.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.31.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase-admin": "^13.1.0",
+    "morgan": "^1.10.0"
+  }
+}

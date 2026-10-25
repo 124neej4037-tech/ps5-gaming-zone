@@ -1,0 +1,16 @@
+{
+  "name": "bandhilki-ps5-gaming-zone",
+  "version": "1.0.0",
+  "description": "Bandhilki PS5 Gaming Zone - Full Stack Application with React, Node.js, Express, and Firebase",
+  "scripts": {
+    "install:all": "npm install && npm --prefix client install && npm --prefix server install",
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"magenta,cyan\" \"npm run server\" \"npm run client\"",
+    "seed": "npm --prefix server run seed",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}
